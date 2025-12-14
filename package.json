@@ -5,9 +5,9 @@
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./public/styles.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
-    "dev": "npm run build:css && npx wrangler dev",
-    "deploy": "npm run build:css && npx wrangler deploy",
-    "start": "npm run watch:css & npx wrangler dev"
+    "dev": "npx update-browserslist-db@latest && npm run build:css && npx wrangler dev",
+    "deploy": "npx update-browserslist-db@latest && npm run build:css && npx wrangler deploy",
+    "start": "npx update-browserslist-db@latest && npm run watch:css & npx wrangler dev"
   },
   "keywords": [
     "cloudflare",
