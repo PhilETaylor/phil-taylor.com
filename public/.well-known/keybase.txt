@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/philtaylor
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.phil-taylor.com
+  * I am philtaylor (https://keybase.io/philtaylor) on keybase.
+  * I have a public key with fingerprint D7F5 ED67 B11E 2F43 D81B  C892 A8C7 8115 EC5E 1DD2
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0111c7158cdcb892812694efc0a20a5f9b3e0df1b3b826f8db66ee9c5199c87d92cd0a",
+            "fingerprint": "d7f5ed67b11e2f43d81bc892a8c78115ec5e1dd2",
+            "host": "keybase.io",
+            "key_id": "a8c78115ec5e1dd2",
+            "kid": "0111c7158cdcb892812694efc0a20a5f9b3e0df1b3b826f8db66ee9c5199c87d92cd0a",
+            "uid": "8e4a834b4c9ddf466cbd3619530fcd19",
+            "username": "philtaylor"
+        },
+        "revoke": {
+            "sig_ids": [
+                "b2380bb28e8feeead57450492199f664f7eb95680a46b965f83be9aa2b9088090f"
+            ]
+        },
+        "service": {
+            "hostname": "www.phil-taylor.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1484231209,
+    "expire_in": 157680000,
+    "prev": "367a5beb24f8242798aebb8339534cdca15a08a93025ee9223256098d9baf22f",
+    "seqno": 23,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0
+
+owGtkj1oFEEYhlejEoM/SWfriIgYj/nfmetEsNUyGJNjfr65rLnsnrt7dx4hYmkj
+iJWVhYVprS0UsVMUKwt7Be00ElHQOHvGztJphhne7/2eeb+5c3gqmZ77/rz34PXp
+L+Welx9tsjC621pHtvBj1F5HqzDZoOehqjurmUdthAkhLiVCOe+s0lQRKjWH4LCh
+2IigLQPsA7HMKiqD8lZKAO0E0dqp1GvqPDZoHoUs70LZL7O8jrY+DQK8TC0hQANn
+XhHror1RLlWECHACiPc0Fq4UVVMR4aypoJUV8S4eOhO8f+j/M/dgYqeAG8W45U57
+H7iUznomiRYMB+eJboQVlLlZg6jur2S92ox7RYk25lEJw2IVmmSrrBuxK9ReRJYy
+ha2lClQAAONFygXmmsb+QUoeUrBaSIUNl1ZLERSzoI2hVmOlsMYBLUXv2HOYuYl5
+k9Nu/9Fo1GoYzv6BaLliLQL2y6IuXNGLgpW67lftJw1dPe5PSsB2ds06Nst9nFYs
+GUJZZUWO2iQqXZ017oQrThmhWM8juN7PSuhkjUKkkTauphEMoyWTqREWLOVBUU5T
+rQxYqxiLqfE4FkOEwcpohqmI0VPKqJBYK6+tCZQG1DzvWl6gNmWR03SjZ0wwN/Wg
+BLQxc2t5XzI3nRzYv7f5xsnMwdm/f/vmmWRncPHZ+dEmp7MLl95mxx6f+qC+ferd
+Z1snT1x++uLrwzfJj6lH73fGW8tXeofuLR7d/nn886sbm+rX9sLt7oVzV98dWfoN
+=igQX
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/philtaylor
+
+==================================================================
+

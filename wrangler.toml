@@ -1,0 +1,13 @@
+name = "phil-taylor-com"
+main = "src/index.js"
+compatibility_date = "2025-07-18"
+
+# Assets configuration
+[site]
+bucket = "./public"
+
+[env.production]
+routes = [
+  { pattern = "phil-taylor.com/*", zone_name = "phil-taylor.com" },
+  { pattern = "www.phil-taylor.com/*", zone_name = "phil-taylor.com" }
+]
