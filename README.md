@@ -1,6 +1,6 @@
 # Phil Taylor - Personal Website
 
-Personal website deployed on Cloudflare Workers.
+Personal website deployed on **Cloudflare Pages** (modern, simple, fast).
 
 ## Setup
 
@@ -14,10 +14,6 @@ npm install
 npx wrangler login
 ```
 
-3. Update `wrangler.toml`:
-   - Add your Cloudflare account ID
-   - Configure your domain routes (if using a custom domain)
-
 ## Development
 
 Run the development server:
@@ -25,42 +21,43 @@ Run the development server:
 npm run dev
 ```
 
-The site will be available at `http://localhost:8787`
+The site will be available at `http://localhost:8788`
 
 ## Deployment
 
-Deploy to Cloudflare Workers:
+Deploy to Cloudflare Pages:
 ```bash
 npm run deploy
 ```
+
+First deployment will create the Pages project. Subsequent deploys will update it.
 
 ## Project Structure
 
 ```
 .
-├── public/              # Static assets served by the worker
+├── public/              # Static files served by Pages
 │   ├── index.html
+│   ├── _headers         # HTTP headers configuration
 │   ├── *.png, *.svg     # Favicons and icons
 │   ├── site.webmanifest
 │   └── .well-known/     # Domain verification files
-├── src/
-│   └── index.js         # Worker script
-├── wrangler.toml        # Cloudflare Workers configuration
 └── package.json
 ```
 
 ## Features
 
-- Cloudflare Workers for edge computing
-- Static asset serving with KV storage
-- Security headers (CSP, X-Frame-Options, etc.)
-- Optimized caching for different asset types
-- Auto dark mode support
+- **Cloudflare Pages** - Modern static site hosting
+- **Global CDN** - Automatic edge caching worldwide
+- **Security headers** - Configured via `_headers` file
+- **Auto HTTPS** - Automatic SSL certificates
+- **Custom domains** - Easy setup in Cloudflare dashboard
+- **Auto dark mode** - System preference detection
 
 ## Custom Domain
 
-To use a custom domain:
-
-1. Add your domain to Cloudflare
-2. Update `wrangler.toml` with your routes
-3. Deploy with `npm run deploy`
+1. Deploy first: `npm run deploy`
+2. Go to Cloudflare Pages dashboard
+3. Click on your project → "Custom domains"
+4. Add `phil-taylor.com` and `www.phil-taylor.com`
+5. Cloudflare handles DNS automatically!
