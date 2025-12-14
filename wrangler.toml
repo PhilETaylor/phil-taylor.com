@@ -1,6 +1,170 @@
+# Worker name (required)
 name = "phil-taylor-com"
+
+# Entry point for the worker (required for Workers with code)
+main = "index.js"
+
+workers_dev=false
+# Compatibility date for Workers runtime (required)
 compatibility_date = "2025-12-14"
+
+# Compatibility flags
+# compatibility_flags = ["nodejs_compat", "streams_enable_constructors"]
+
+# Account ID (optional, can be set via CLOUDFLARE_ACCOUNT_ID env var)
+account_id = "3daef84f0b44a778a448d8d299d0d0c9"
+
+# Route pattern for workers.dev subdomain
+# workers_dev = true
+
+# Routes to deploy the worker to
+# routes = [
+#   { pattern = "example.com/*", zone_name = "example.com" },
+#   { pattern = "*.example.com/*", zone_id = "your-zone-id" }
+# ]
+
+# Custom domains
+[[routes]]
+pattern = "www.phil-taylor.com"
+custom_domain = true
+
+# Logpush (send logs to storage)
+# logpush = false
+
+# Tail consumers (for logging)
+# [[tail_consumers]]
+# service = "my-log-consumer"
+
+# Usage model (bundled or unbound)
+# usage_model = "bundled"
+
+# Build configuration
+# [build]
+# command = "npm install && npm run build"
+# cwd = "./"
+# watch_dirs = ["src"]
+
+# Upload rules for additional files
+# [build.upload]
+# format = "service-worker"
+# dir = "./dist"
+# main = "./worker.js"
 
 # Static assets configuration
 [assets]
+html_handling = "auto-trailing-slash"
 directory = "./public"
+# html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
+
+# Environment variables (plaintext - not recommended for secrets)
+# [vars]
+# ENVIRONMENT = "production"
+# API_URL = "https://api.example.com"
+
+# KV Namespaces
+# [[kv_namespaces]]
+# binding = "MY_KV"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# preview_id = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+
+# Durable Objects
+# [[durable_objects.bindings]]
+# name = "MY_DURABLE_OBJECT"
+# class_name = "MyDurableObject"
+# script_name = "my-durable-object-worker"
+
+# [[migrations]]
+# tag = "v1"
+# new_classes = ["MyDurableObject"]
+
+# R2 Buckets
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+# preview_bucket_name = "my-bucket-preview"
+
+# D1 Databases
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+# preview_database_id = "yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy"
+
+# Analytics Engine
+# [[analytics_engine_datasets]]
+# binding = "ANALYTICS"
+
+# Service bindings (call other workers)
+# [[services]]
+# binding = "MY_SERVICE"
+# service = "my-other-worker"
+# environment = "production"
+
+# Queue bindings
+# [[queues.producers]]
+# binding = "MY_QUEUE"
+# queue = "my-queue-name"
+
+# [[queues.consumers]]
+# queue = "my-queue-name"
+# max_batch_size = 10
+# max_batch_timeout = 30
+# max_retries = 3
+# dead_letter_queue = "my-dlq"
+
+# Vectorize bindings
+# [[vectorize]]
+# binding = "VECTORIZE"
+# index_name = "my-index"
+
+# Hyperdrive (database connection pooling)
+# [[hyperdrive]]
+# binding = "HYPERDRIVE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# Browser rendering
+# [browser]
+# binding = "BROWSER"
+
+# AI bindings
+# [ai]
+# binding = "AI"
+
+# Version metadata
+# [version_metadata]
+# binding = "CF_VERSION_METADATA"
+
+# Unsafe bindings (use with caution)
+# [unsafe]
+# bindings = [
+#   { name = "MY_BINDING", type = "plain_text", text = "value" }
+# ]
+
+# Observability
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
+
+# Limits
+# [limits]
+# cpu_ms = 50
+
+# Placement (smart placement)
+# [placement]
+# mode = "smart"
+
+# Environment-specific configurations
+# [env.staging]
+# name = "phil-taylor-com-staging"
+# vars = { ENVIRONMENT = "staging" }
+# routes = [{ pattern = "staging.example.com/*", zone_name = "example.com" }]
+
+# [env.production]
+# name = "phil-taylor-com-production"
+# vars = { ENVIRONMENT = "production" }
+# routes = [{ pattern = "example.com/*", zone_name = "example.com" }]
