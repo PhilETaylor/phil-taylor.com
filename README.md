@@ -1,6 +1,6 @@
 # Phil Taylor - Personal Website
 
-Personal website deployed on **Cloudflare Pages** (modern, simple, fast).
+Personal website deployed on **Cloudflare Workers** with static assets (modern, simple, fast).
 
 ## Setup
 
@@ -21,22 +21,22 @@ Run the development server:
 npm run dev
 ```
 
-The site will be available at `http://localhost:8788`
+The site will be available at `http://localhost:8787` (default Workers dev server port)
 
 ## Deployment
 
-Deploy to Cloudflare Pages:
+Deploy to Cloudflare Workers:
 ```bash
 npm run deploy
 ```
 
-First deployment will create the Pages project. Subsequent deploys will update it.
+First deployment will create the Worker. Subsequent deploys will update it.
 
 ## Commands Reference
 
 ### Development
 ```bash
-npm run dev              # Build CSS + start dev server (localhost:8788)
+npm run dev              # Build CSS + start dev server (localhost:8787)
 npm run start            # Watch CSS + start dev server (auto-reload CSS)
 npm run build:css        # Build Tailwind CSS once
 npm run watch:css        # Watch and rebuild CSS on file changes
@@ -44,31 +44,32 @@ npm run watch:css        # Watch and rebuild CSS on file changes
 
 ### Deployment
 ```bash
-npm run deploy                    # Build + deploy to Cloudflare Pages
-npx wrangler pages deploy public  # Manual deploy (no CSS build)
+npm run deploy           # Build + deploy to Cloudflare Workers
+npx wrangler deploy      # Manual deploy (no CSS build)
 ```
 
-### Cloudflare Pages Management
+### Cloudflare Workers Management
 ```bash
 # View deployments
-npx wrangler pages deployments list --project-name=phil-taylor-com
+npx wrangler deployments list
 
 # View live logs
-npx wrangler pages tail phil-taylor-com
+npx wrangler tail
 
-# View project info
-npx wrangler pages project list
+# View worker info
+npx wrangler whoami
 
 # Delete a deployment
-npx wrangler pages deployments delete <deployment-id> --project-name=phil-taylor-com
+npx wrangler delete
 ```
 
-### Git Deployment (Auto-deploy on push)
+### Git Deployment (Workers Builds - Optional)
+If you set up Workers Builds, you can enable auto-deploy on push:
 ```bash
 git add .
 git commit -m "Update site"
 git push origin main
-# Cloudflare automatically deploys!
+# Enable Workers Builds in the Cloudflare dashboard for auto-deploy
 ```
 
 ### Tailwind CSS
@@ -100,28 +101,35 @@ npx wrangler pages tail phil-taylor-com --format=pretty
 
 ```
 .
-├── public/              # Static files served by Pages
+├── public/              # Static files served by Workers
 │   ├── index.html
+│   ├── 404.html
 │   ├── _headers         # HTTP headers configuration
 │   ├── *.png, *.svg     # Favicons and icons
 │   ├── site.webmanifest
 │   └── .well-known/     # Domain verification files
+├── src/
+│   └── input.css        # Tailwind CSS source
+├── wrangler.toml        # Workers configuration
+├── tailwind.config.js
 └── package.json
 ```
 
 ## Features
 
-- **Cloudflare Pages** - Modern static site hosting
+- **Cloudflare Workers** - Modern static asset hosting with full Worker capabilities
 - **Global CDN** - Automatic edge caching worldwide
-- **Security headers** - Configured via `_headers` file
+- **Security headers** - Configured via `_headers` file in public/
 - **Auto HTTPS** - Automatic SSL certificates
-- **Custom domains** - Easy setup in Cloudflare dashboard
+- **Custom domains** - Cloudflare-managed nameservers required
 - **Auto dark mode** - System preference detection
+- **404 handling** - Custom 404 page configured in wrangler.toml
 
 ## Custom Domain
 
-1. Deploy first: `npm run deploy`
-2. Go to Cloudflare Pages dashboard
-3. Click on your project → "Custom domains"
-4. Add `phil-taylor.com` and `www.phil-taylor.com`
-5. Cloudflare handles DNS automatically!
+1. Ensure your domain uses Cloudflare nameservers
+2. Deploy first: `npm run deploy`
+3. Go to Cloudflare Workers dashboard
+4. Click on your worker → "Settings" → "Domains & Routes"
+5. Add custom domains: `phil-taylor.com` and `www.phil-taylor.com`
+6. DNS records will be automatically configured
