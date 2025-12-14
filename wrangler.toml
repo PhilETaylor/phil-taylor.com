@@ -1,9 +1,0 @@
-# Cloudflare Pages configuration
-# Deploy with: npx wrangler pages deploy public --project-name=phil-taylor-com
-
-# No worker needed for static sites with Pages!
-# Pages handles everything automatically:
-# - Automatic HTTPS
-# - Global CDN
-# - Custom domains
-# - Headers and redirects via _headers and _redirects files
