@@ -1,0 +1,4 @@
+Contact: mailto:security@phil-taylor.com
+Expires: 2026-12-14T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://phil-taylor.com/.well-known/security.txt

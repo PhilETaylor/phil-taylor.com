@@ -1,26 +1,24 @@
 <!doctype html>
 <html lang="en-US">
     <head>
-        <!-- CF Workers -->
+        <title>Phil E. Taylor - PHP Developer & SaaS Founder</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Phil E. Taylor - PHP Developer & SaaS Founder</title>
-
         <meta
             name="description"
-            content="Phil E. Taylor, PHP Applications Developer. Founder of mySites.guru and other SaaS services."
+            content="Phil E. Taylor is a Senior PHP Developer, entrepreneur and founder of mySites.guru and other SaaS services."
         />
         <meta
             name="keywords"
-            content="php developer, saas founder, entrepreneur, founder, php"
+            content="php developer, saas founder, entrepreneur, founder, php, JerseyCI"
         />
 
         <link rel="canonical" href="https://www.phil-taylor.com/" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1.1" />
         <link
             rel="icon"
             type="image/png"
-            href="/favicon-96x96.png?v=2"
+            href="/favicon-96x96.png?v=1.1"
             sizes="96x96"
         />
         <link
@@ -28,9 +26,10 @@
             sizes="180x180"
             href="/apple-touch-icon.png?v=2"
         />
-        <link rel="manifest" href="/site.webmanifest?v=2" />
 
-        <link rel="stylesheet" href="/styles.css?v=1.0" />
+        <link rel="manifest" href="/site.webmanifest?v=1.1" />
+        <link rel="stylesheet" href="/styles.css?v=1.1" />
+        <link rel="author" href="/humans.txt?v=1.1" />
 
         <script>
             // Auto dark mode based on system preference
@@ -53,9 +52,19 @@
                     <div
                         class="bg-gray-200 dark:bg-gray-900 border-b-2 border-gray-300 dark:border-green-400 px-4 py-2 flex items-center gap-2"
                     >
-                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        <a
+                            href="https://google.com"
+                            target="_blank"
+                            class="w-3 h-3 rounded-full bg-red-500 hover:opacity-80 cursor-pointer"
+                        ></a>
+                        <a
+                            href="https://today.je"
+                            class="w-3 h-3 rounded-full bg-yellow-500 hover:opacity-80 cursor-pointer"
+                        ></a>
+                        <a
+                            href="https://evchargers.je"
+                            class="w-3 h-3 rounded-full bg-green-500 hover:opacity-80 cursor-pointer"
+                        ></a>
                         <span
                             class="ml-4 text-sm text-gray-600 dark:text-green-400"
                             >~/Sites/www.phil-taylor.com ~ %</span
@@ -158,6 +167,64 @@
                                 >
                                     phil@phil-taylor.com
                                 </a>
+                            </p>
+                        </div>
+
+                        <div class="h-px bg-gray-300 dark:bg-green-400"></div>
+
+                        <div class="space-y-2">
+                            <p
+                                class="text-sm text-gray-500 dark:text-green-600"
+                            >
+                                $ cat ~/.ssh/authorized_keys
+                            </p>
+                            <p class="text-sm md:text-base relative group">
+                                <a
+                                    href="/phil_e_taylor_public_key.pub"
+                                    class="text-blue-600 dark:text-cyan-400 hover:underline"
+                                    download
+                                >
+                                    ssh-rsa AAAA...5z5w==
+                                </a>
+                                <span
+                                    class="invisible group-hover:visible absolute bottom-full left-0 mb-2 w-64 p-3 bg-gray-800 dark:bg-gray-900 text-white text-xs rounded shadow-lg border border-gray-600 z-10"
+                                >
+                                    <strong>For advanced users:</strong> This is
+                                    my SSH public key for secure server
+                                    authentication. Unless you're setting up SSH
+                                    access, you can safely ignore this. Click to
+                                    download the public key
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="h-px bg-gray-300 dark:bg-green-400"></div>
+
+                        <div class="space-y-2">
+                            <p
+                                class="text-sm text-gray-500 dark:text-green-600"
+                            >
+                                $ gpg --fingerprint phil@phil-taylor.com
+                            </p>
+                            <p class="text-sm md:text-base relative group">
+                                <a
+                                    href="/Phil_E_Taylor_GPGKEY.asc"
+                                    class="text-blue-600 dark:text-cyan-400 hover:underline"
+                                    download
+                                >
+                                    4870 2C9E 4AFF 73DC EB26 5BBE FE1F 49F4 A342
+                                    E27C
+                                </a>
+                                <span
+                                    class="invisible group-hover:visible absolute bottom-full left-0 mb-2 w-64 p-3 bg-gray-800 dark:bg-gray-900 text-white text-xs rounded shadow-lg border border-gray-600 z-10"
+                                >
+                                    <strong>For advanced users:</strong> This is
+                                    my GPG/PGP public key fingerprint for
+                                    encrypted communication and signature
+                                    verification. Unless you're using encryption
+                                    tools, you can safely ignore this. Click to
+                                    download the public key in asc format.
+                                </span>
                             </p>
                         </div>
                     </div>

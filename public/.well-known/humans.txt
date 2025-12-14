@@ -1,0 +1,7 @@
+/* TEAM */
+Developer: Phil E. Taylor
+Site: https://www.phil-taylor.com
+Location: Jersey, Channel Islands
+
+/* SITE */
+Components: Cloudflare Workers, Tailwind CSS
