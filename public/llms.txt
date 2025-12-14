@@ -1,0 +1,30 @@
+# Phil E. Taylor
+
+> Senior software developer specializing in PHP, full-stack SaaS architecture, and DevOps. Entrepreneur, founder, pilot, and maritime professional.
+
+I'm a senior software developer with deep expertise in PHP development, SaaS platform architecture, and complete lifecycle DevOps. I specialize in Linux server security and digital data protection, with a track record of discovering and responsibly reporting security vulnerabilities in critical systems.
+
+As an entrepreneur, I've founded multiple digital businesses. Much of my work operates under white label arrangements or NDA, building platforms that power other companies' services.
+
+When not coding, I'm actively engaged in aviation and maritime pursuits as a commercially qualified airplane pilot, flying instructor, and boat owner with multiple commercially endorsed maritime certificates.
+
+**Core Expertise:** PHP, SaaS Architecture, DevOps, Linux Server Management, Web Application Security, Digital Data Protection
+
+**Contact:** phil@phil-taylor.com
+
+## Key Resources
+
+- [SSH Public Key](https://www.phil-taylor.com/phil_e_taylor_public_key.pub): For secure server authentication
+- [GPG/PGP Public Key](https://www.phil-taylor.com/Phil_E_Taylor_GPGKEY.asc): For encrypted communication (fingerprint: 4870 2C9E 4AFF 73DC EB26 5BBE FE1F 49F4 A342 E27C)
+- [Security Policy](https://www.phil-taylor.com/.well-known/security.txt): Security vulnerability reporting policy
+- [Personal Website](https://www.phil-taylor.com/): Main profile and contact information
+
+## Projects
+
+- [Today.je - Jersey News and Local Information Platform](https://today.je): Local news, events, and community information for Jersey, Channel Islands
+- [mySites.guru - WordPress and Joomla Website Health Checker](https://mySites.guru): Award-winning security and performance monitoring tools for WordPress and Joomla websites
+- [EVChargers.je - Jersey Electric Vehicle Charging Station Network](https://evchargers.je): Comprehensive guide to EV charging points and electric vehicle infrastructure in Jersey
+
+---
+
+*Last updated: 2025-12-14*
