@@ -32,6 +32,70 @@ npm run deploy
 
 First deployment will create the Pages project. Subsequent deploys will update it.
 
+## Commands Reference
+
+### Development
+```bash
+npm run dev              # Build CSS + start dev server (localhost:8788)
+npm run start            # Watch CSS + start dev server (auto-reload CSS)
+npm run build:css        # Build Tailwind CSS once
+npm run watch:css        # Watch and rebuild CSS on file changes
+```
+
+### Deployment
+```bash
+npm run deploy                    # Build + deploy to Cloudflare Pages
+npx wrangler pages deploy public  # Manual deploy (no CSS build)
+```
+
+### Cloudflare Pages Management
+```bash
+# View deployments
+npx wrangler pages deployments list --project-name=phil-taylor-com
+
+# View live logs
+npx wrangler pages tail phil-taylor-com
+
+# View project info
+npx wrangler pages project list
+
+# Delete a deployment
+npx wrangler pages deployments delete <deployment-id> --project-name=phil-taylor-com
+```
+
+### Git Deployment (Auto-deploy on push)
+```bash
+git add .
+git commit -m "Update site"
+git push origin main
+# Cloudflare automatically deploys!
+```
+
+### Tailwind CSS
+```bash
+# Build for production (minified)
+npx tailwindcss -i ./src/input.css -o ./public/styles.css --minify
+
+# Build with source maps (debugging)
+npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch
+
+# Check Tailwind version
+npx tailwindcss --help
+```
+
+### Troubleshooting
+```bash
+# Clear node modules and reinstall
+rm -rf node_modules package-lock.json
+npm install
+
+# Check deployment status
+npx wrangler pages deployments list --project-name=phil-taylor-com
+
+# View deployment logs
+npx wrangler pages tail phil-taylor-com --format=pretty
+```
+
 ## Project Structure
 
 ```

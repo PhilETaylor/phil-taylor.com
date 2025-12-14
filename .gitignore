@@ -21,3 +21,4 @@ Thumbs.db
 # Build
 dist/
 .cache/
+public/styles.css
