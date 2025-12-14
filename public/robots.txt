@@ -1,5 +1,2 @@
-// allow all
 User-agent: *
-Disallow:
-Allow: /
 Disallow: /InvoicePaymentNotes.pdf
