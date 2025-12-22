@@ -30,12 +30,7 @@
             href="/styles.css?v=2.0"
         />
 
-        <script>
-            // Auto dark mode based on system preference
-            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                document.documentElement.classList.add("dark");
-            }
-        </script>
+        <script src="/js/dark-mode.js"></script>
     </head>
 
     <body class="text-gray-900 dark:text-green-400 font-mono transition-colors duration-300">
@@ -57,7 +52,6 @@
                         <div class="space-y-2">
                             <p class="text-sm text-gray-500 dark:text-green-600">
                                 $ ls -la
-                                <span id="pathname"></span>
                             </p>
                             <h1
                                 class="text-3xl md:text-4xl font-bold text-red-600 dark:text-red-400"
@@ -104,9 +98,5 @@
             </main>
         </div>
 
-        <script>
-            // Display the current path
-            document.getElementById("pathname").textContent = window.location.pathname;
-        </script>
     </body>
 </html>
