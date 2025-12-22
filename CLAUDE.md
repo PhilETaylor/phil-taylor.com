@@ -9,7 +9,7 @@ Personal website for Phil E. Taylor deployed on **Cloudflare Workers** with stat
 ## Technology Stack
 
 - **Hosting**: Cloudflare Workers with static assets serving
-- **Styling**: Tailwind CSS v3.4.0
+- **Styling**: Tailwind CSS v4.1
 - **Deployment**: Wrangler CLI (v4.54.0)
 - **Runtime**: Cloudflare Workers (ES modules)
 
@@ -55,10 +55,13 @@ All content is served from the `public/` directory:
 - **llms.txt**: LLM-friendly content summary
 
 ### Styling System (`src/`)
-- **input.css**: Tailwind source with custom background patterns
+- **input.css**: Tailwind v4 CSS-first configuration
+  - Uses `@import "tailwindcss"` and `@source` for content detection
+  - Theme customization via `@theme` block (custom font-mono)
+  - Custom utilities via `@utility` directive
   - Custom SVG patterns for light/dark mode backgrounds
   - Cursor blink animation for terminal effect
-  - Dark mode uses system preferences via `prefers-color-scheme`
+  - Dark mode uses native `@media (prefers-color-scheme: dark)`
 
 ### Configuration Files
 - **wrangler.toml**: Cloudflare Workers configuration
@@ -67,9 +70,6 @@ All content is served from the `public/` directory:
   - Custom domain: www.phil-taylor.com
   - 404 handling: serves 404.html
   - Observability enabled with full logging
-- **tailwind.config.js**: Tailwind configuration
-  - Content: `./public/**/*.{html,js}`
-  - Dark mode: class-based (controlled by JS)
 
 ## Security Configuration
 
@@ -89,11 +89,10 @@ When modifying security headers:
 ## Dark Mode Implementation
 
 Dark mode is automatic based on system preferences:
-1. `js/dark-mode.js` runs immediately in `<head>` to prevent flash
-2. Checks `window.matchMedia("(prefers-color-scheme: dark)")`
-3. Adds `dark` class to `<html>` element if dark mode detected
-4. Tailwind dark mode classes apply automatically via `dark:` prefix
-5. Background patterns switch between light/dark variants (defined in `src/input.css`)
+1. Tailwind v4 uses native CSS `@media (prefers-color-scheme: dark)` by default
+2. The `dark:` variant applies styles automatically based on OS preference
+3. Background patterns switch between light/dark variants (defined in `src/input.css`)
+4. `js/dark-mode.js` adds `dark` class to `<html>` for any non-Tailwind dark mode needs
 
 ## Deployment Architecture
 
@@ -103,9 +102,8 @@ Dark mode is automatic based on system preferences:
 - **Compatibility date**: 2025-12-14
 
 The deployment process:
-1. Updates browserslist database
-2. Compiles Tailwind CSS (minified)
-3. Deploys Worker + static assets to Cloudflare edge
+1. Compiles Tailwind CSS (minified) via @tailwindcss/cli
+2. Deploys Worker + static assets to Cloudflare edge
 
 ## Common Modifications
 
@@ -117,9 +115,12 @@ The deployment process:
 
 ### Modifying Styles
 1. Edit HTML classes directly (Tailwind utility classes)
-2. For custom CSS, edit `src/input.css` in appropriate @layer
+2. For custom CSS, edit `src/input.css`:
+   - Use `@theme` block for design tokens (colors, fonts, spacing)
+   - Use `@utility` directive for custom utility classes
+   - Regular CSS works alongside Tailwind
 3. Rebuild: `npm run build:css` or use `npm run watch:css` during development
-4. Tailwind content scanning: `./public/**/*.{html,js}`
+4. Content sources defined via `@source` in input.css
 
 ### Testing Security Headers
 1. Modify `public/_headers`

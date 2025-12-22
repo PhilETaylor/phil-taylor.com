@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Personal website for Phil E. Taylor",
   "scripts": {
-    "build:css": "tailwindcss -i ./src/input.css -o ./public/styles.css --minify",
-    "watch:css": "tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
-    "dev": "npx update-browserslist-db@latest && npm run build:css && npx wrangler dev",
-    "deploy": "npx update-browserslist-db@latest && npm run build:css && npx wrangler deploy",
-    "start": "npx update-browserslist-db@latest && npm run watch:css & npx wrangler dev"
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/styles.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/styles.css --watch",
+    "dev": "npm run build:css && npx wrangler dev",
+    "deploy": "npm run build:css && npx wrangler deploy",
+    "start": "npm run watch:css & npx wrangler dev"
   },
   "keywords": [
     "cloudflare",
@@ -17,7 +17,8 @@
   "author": "Phil E. Taylor",
   "license": "MIT",
   "devDependencies": {
-    "tailwindcss": "^3.4.0",
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0",
     "wrangler": "^4.54.0"
   }
 }
