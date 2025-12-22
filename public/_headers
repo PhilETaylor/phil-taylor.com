@@ -6,7 +6,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-Tr6h8FIbj9/muZ0bZviaF8iiW9T+yVYwBYfU/WNa45Q=' 'sha256-tyDr8fHLrbyuOS3kMOaCi4hXj39L8yjr9iWKiB5fz8k=' https://www.googletagmanager.com https://cdn.livechatinc.com http://cdn.livechatinc.com https://api.livechatinc.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://cdn.livechatinc.com https://api.livechatinc.com https://cloudflareinsights.com; frame-src https://secure.livechatinc.com; object-src 'none'; base-uri 'self'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-Tr6h8FIbj9/muZ0bZviaF8iiW9T+yVYwBYfU/WNa45Q=' 'sha256-tyDr8fHLrbyuOS3kMOaCi4hXj39L8yjr9iWKiB5fz8k=' https://www.googletagmanager.com https://cdn.livechatinc.com http://cdn.livechatinc.com https://api.livechatinc.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.gravatar.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://cdn.livechatinc.com https://api.livechatinc.com https://cloudflareinsights.com; frame-src https://secure.livechatinc.com; object-src 'none'; base-uri 'self'; form-action 'self'
   Cross-Origin-Embedder-Policy: unsafe-none
   Cross-Origin-Opener-Policy: same-origin-allow-popups
   Cross-Origin-Resource-Policy: cross-origin

@@ -26,6 +26,7 @@ account_id = "3daef84f0b44a778a448d8d299d0d0c9"
 # Custom domains
 [[routes]]
 pattern = "www.phil-taylor.com"
+zone_name="phil-taylor.com"
 custom_domain = true
 
 # Logpush (send logs to storage)
@@ -54,7 +55,6 @@ custom_domain = true
 [assets]
 html_handling = "auto-trailing-slash"
 directory = "./public"
-# html_handling = "auto-trailing-slash"
 not_found_handling = "404-page"
 
 # Environment variables (plaintext - not recommended for secrets)
