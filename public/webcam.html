@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Streams</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            font-family: system-ui, sans-serif;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .stream {
+            width: calc(50% - 10px);
+            flex-shrink: 0;
+        }
+        .stream h2 {
+            margin: 0 0 10px;
+            font-size: 1rem;
+            color: #aaa;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stream">
+            <h2>Stream 1</h2>
+            <video id="video1" controls autoplay muted></video>
+        </div>
+        <div class="stream">
+            <h2>Stream 2</h2>
+            <video id="video2" controls autoplay muted></video>
+        </div>
+        <div class="stream">
+            <h2>Aero Club - Fuel Bowser</h2>
+            <video id="video3" controls autoplay muted></video>
+        </div>
+        <div class="stream">
+            <h2>Jersey Aero Club</h2>
+            <video id="video4" controls autoplay muted></video>
+        </div>
+    </div>
+
+    <script>
+        const streams = [
+            { id: 'video1', url: 'https://s46.ipcamlive.com/streams/2emzpfkysjfenic91/stream.m3u8' },
+            { id: 'video2', url: 'https://s27.ipcamlive.com/streams/1btfhvmn39guzly1k/stream.m3u8' },
+            { id: 'video3', url: 'https://s46.ipcamlive.com/streams/2enlchzrx9xu5ugdd/stream.m3u8' },
+            { id: 'video4', url: 'https://s46.ipcamlive.com/streams/2esfcpkod4jwqx7lu/stream.m3u8' }
+        ];
+
+        streams.forEach(({ id, url }) => {
+            const video = document.getElementById(id);
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(url);
+                hls.attachMedia(video);
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = url;
+            }
+        });
+    </script>
+</body>
+</html>
