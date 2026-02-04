@@ -1,0 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Canonical: https://www.phil-taylor.com/.well-known/security.txt
+Contact: mailto:phil@phil-taylor.com
+Encryption: https://www.phil-taylor.com/Phil_E_Taylor_GPGKEY.asc
+Expires: 2027-02-04T07:44:00Z
+Preferred-Languages: en
+-----BEGIN PGP SIGNATURE-----
+
+iQJJBAEBCAAzFiEENSx8nIOP1J6NcB1G9G+oB8Yok+0FAmmDZH8VHHBoaWxAcGhp
+bC10YXlsb3IuY29tAAoJEPRvqAfGKJPtHmkP/i93T36b0BEG+8bRwBKBviM4EPgo
+OG1VYyEj2H4G+RjzFqr5rtrVNnYNNTaHHxmQ2e5EKgM88d62hdMj6M3DTvaUoYUL
+aAklfhu5rni6ecovLVoEO2h0/08WA4xS34VL7Bb9wcTZ0jAYCKRtv4e5qYXbt5Og
+QRTUFVNw+mKJFTYjd1FN7/KRHBgbXOg3cedm8iDJCFpDoR7hDxBbENDFw/pH8/8L
+f0VmDpSho+bv3pFo+zXrSFHrR3i7Nws30nloMNMwv9QWPtwUKr+UB/Ejra/ZdJJe
+xO5X9QU2bMhQ5aeuA8dG/5whXat7PANy1KbWL8IqRZmCL4lmfiCi2Jnygue4YJVy
+SUEWTfWXB2cILTvGKB/iv80+2KF6TCQA/TeKcWt/DUQUpTUsW95ZeJEdevT7rGgn
+ogo6l4uq5V4wF0hnd4RFyNBuRo+blw/7xvTlCaXs1na4TfPJ9nhM2BUhm4GZb1FI
+GRLGC0bp+0KXyFgo1E9myJ32KO6mv1Nmr2gXAxAxTxd6PN8zdpO1a5qU1vfe7ca9
+0kmy3wLbV2hjrwrebQZ7kP3/0x3AxvWHDvxKbp0S5R9LD0KEdLRqI5S6Z/5DuvaK
+PNvtN7AtjgoiQCl1605elm+95DYgBJRc1jMfO+4ykKiAo6Xplg3L7vLOujF8eR6i
+ZPjPUvMY3icB4OG1
+=T6GN
+-----END PGP SIGNATURE-----
