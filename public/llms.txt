@@ -12,6 +12,16 @@ When not coding, I'm actively engaged in aviation and maritime pursuits as a com
 
 **Contact:** phil@phil-taylor.com
 
+## Current Personal Projects
+
+- [mySites.guru](https://mySites.guru): Manage All Your WordPress & Joomla Sites From One Dashboard
+- [JoomlaHealthChecker.com](https://JoomlaHealthChecker.com): Instant Health Report for Your Joomla Site
+- [SearchMySites.com](https://SearchMySites.com): Best Search for Joomla — Finally.
+- [myDomains.live](https://myDomains.live): Replace Your Domain Management Spreadsheet
+- [Today.je](https://Today.je): Today in Jersey, Channel Islands
+- [EVChargers.je](https://EVChargers.je): Jersey, Channel Islands - Public EV Charger Statuses
+- [fix.mysites.guru](https://fix.mysites.guru/): Same Day Joomla/WordPress Site Fixes
+
 ## Key Resources
 
 - [SSH Public Key](https://www.phil-taylor.com/phil_e_taylor_public_key.pub): For secure server authentication
@@ -19,12 +29,6 @@ When not coding, I'm actively engaged in aviation and maritime pursuits as a com
 - [Security Policy](https://www.phil-taylor.com/.well-known/security.txt): Security vulnerability reporting policy
 - [Personal Website](https://www.phil-taylor.com/): Main profile and contact information
 
-## Projects
-
-- [Today.je - Jersey News and Local Information Platform](https://today.je): Local news, events, and community information for Jersey, Channel Islands
-- [mySites.guru - WordPress and Joomla Website Health Checker](https://mySites.guru): Award-winning security and performance monitoring tools for WordPress and Joomla websites
-- [EVChargers.je - Jersey Electric Vehicle Charging Station Network](https://evchargers.je): Comprehensive guide to EV charging points and electric vehicle infrastructure in Jersey
-
 ---
 
-*Last updated: 2026-02-14*
+*Last updated: 2026-02-17*
