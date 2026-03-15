@@ -78,6 +78,16 @@ a.no-underline:hover {
   text-decoration: none;
 }
 
+/* Pulse animation for status dots */
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 0 var(--color-primer-success-fg); }
+  50% { box-shadow: 0 0 0 4px transparent; }
+}
+
+@utility pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
 /* Cursor blink animation */
 @keyframes blink {
   0%, 100% { opacity: 1; }
