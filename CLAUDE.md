@@ -133,3 +133,27 @@ The deployment process:
 2. Update CSP in `public/_headers` (add domain to script-src, connect-src as needed)
 3. Calculate sha256 hash if inline script: `echo -n "script content" | openssl dgst -sha256 -binary | openssl base64`
 4. Test thoroughly before deploying
+
+## Design Context
+
+### Users
+Mixed audience of potential clients (seeking PHP/SaaS/DevOps expertise or site fixes) and technical peers (developers, open source community, industry contacts). Visitors arrive with a specific intent: either evaluating Phil as a hire/collaborator, or looking up contact and project info.
+
+### Brand Personality
+**Competent, direct, technical.** A serious professional who lets expertise and track record speak for itself. No flash, no hype.
+
+### Aesthetic Direction
+- **Reference:** GitHub profile page. The Primer-based design is the canonical reference.
+- **Color system:** GitHub Primer palette with full light/dark mode via `prefers-color-scheme`.
+- **Typography:** System font stack for body, monospace for technical elements.
+- **Layout:** Two-column GitHub profile: fixed-width sidebar (296px desktop) + flexible main column.
+- **Components:** Bordered cards with subtle hover-lift, pill badges, testimonial cards, project grid, tooltip popovers.
+- **Interactions:** Minimal and purposeful. Small translate-y shifts, border color changes, soft shadows.
+- **Anti-references:** Marketing-heavy landing pages, hero banners, gradients, illustration-heavy aesthetics.
+
+### Design Principles
+1. **Let the content prove competence.** Design never tries harder than the work itself.
+2. **GitHub is the vernacular.** Primer conventions mean zero learning curve for the technical audience.
+3. **Restraint is the brand.** Every element earns its place. No decorative flourishes.
+4. **Dark mode is a first-class citizen.** Both themes must feel intentional.
+5. **Trust through consistency.** Uniform spacing, predictable interactions, tight type scale.
