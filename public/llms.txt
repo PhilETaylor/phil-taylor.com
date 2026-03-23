@@ -1,12 +1,14 @@
 # Phil E. Taylor
 
-> Senior software developer specializing in PHP, full-stack SaaS architecture, and DevOps. Entrepreneur, founder, pilot, and maritime professional.
+> Senior software developer specialising in PHP, full-stack SaaS, and complete platform lifecycle architecture - including DevOps. Entrepreneur, founder, pilot, and maritime professional.
 
-I'm a senior software developer with deep expertise in PHP development, SaaS platform architecture, and complete lifecycle DevOps. I specialize in Linux server security and digital data protection, with a track record of discovering and responsibly reporting security vulnerabilities in critical systems.
+Senior software developer specialising in PHP, full-stack SaaS, and complete platform lifecycle architecture - including DevOps. Most often found in the terminal.
 
-As an entrepreneur, I've founded multiple digital businesses. Much of my work operates under white label arrangements or NDA, building platforms that power other companies' services.
+Expert in Linux server security and personal data protection, with a track record of discovering and responsibly disclosing vulnerabilities in critical systems.
 
-When not coding, I'm actively engaged in aviation and maritime pursuits as a commercially qualified airplane pilot, flying instructor, and boat owner with multiple commercially endorsed maritime certificates.
+Entrepreneur and founder of multiple digital businesses. Much of my work runs under white-label arrangements or NDA - building the platforms that quietly power other companies' products.
+
+When I'm not coding, you'll find me flying or out on the water. I hold a Commercial Pilot Licence, a Qualified Flying Instructor rating, and own my own aircraft. On the water: MCA/RYA Advanced Powerboat commercially endorsed, and several other maritime certifications - plus my own boat.
 
 **Core Expertise:** PHP, SaaS Architecture, DevOps, Linux Server Management, Web Application Security, Digital Data Protection
 
