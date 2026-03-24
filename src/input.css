@@ -187,6 +187,115 @@ a.no-underline:hover {
   }
 }
 
+/* ── Overdrive: Animated gradient border on content container ── */
+@property --border-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes border-rotate {
+  to { --border-angle: 360deg; }
+}
+
+.ambient-border {
+  position: relative;
+}
+
+.ambient-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  top: 16px;
+  border-radius: 14px;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--border-angle),
+    transparent 20%,
+    var(--color-primer-accent-fg) 50%,
+    transparent 80%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0.18;
+  animation: border-rotate 8s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ambient-border::before {
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-border::before {
+    animation: none;
+    opacity: 0.08;
+  }
+}
+
+/* ── Overdrive: Status dot radar ping ── */
+@keyframes radar-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.status-dot {
+  position: relative;
+}
+
+.status-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background-color: var(--color-primer-success-fg);
+  animation: radar-ping 2s ease-out infinite;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-dot::after {
+    animation: none;
+    display: none;
+  }
+}
+
+/* ── Overdrive: Star rating gold shimmer ── */
+@property --shimmer-x {
+  syntax: '<percentage>';
+  initial-value: -100%;
+  inherits: false;
+}
+
+@keyframes star-shimmer {
+  0% { --shimmer-x: -100%; }
+  100% { --shimmer-x: 200%; }
+}
+
+.star-shimmer svg {
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+}
+
+.star-shimmer.shimmer-active svg {
+  filter: brightness(1.3) drop-shadow(0 0 2px rgba(227, 179, 65, 0.5));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star-shimmer.shimmer-active svg {
+    filter: none;
+  }
+}
+
 /* ── Overdrive: Contact button border-draw ── */
 .contact-draw {
   position: relative;
