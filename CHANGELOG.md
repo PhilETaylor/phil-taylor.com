@@ -8,6 +8,9 @@
 - Gold shimmer effect on testimonial star ratings when scrolled into view
 - Time-of-day accent color shift (morning/afternoon/evening blues)
 
+### Fixed
+- Fix structured data validation: change `owns` items from WebApplication/WebSite to Product type
+
 ### Changed
 - Rewrite About bio with updated credentials and clearer structure
 - Double testimonial star rating size from 12px to 24px
