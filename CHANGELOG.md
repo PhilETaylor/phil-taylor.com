@@ -1,6 +1,11 @@
 # Changelog
 
-## [Unreleased]
+## 2026-04-03
+
+### Fixed
+- Change structured data `owns` type from Product to WebApplication to fix Google validation warnings for missing review/aggregateRating/offers
+
+## 2026-04-02
 
 ### Added
 - Ambient animated gradient border around main content container
