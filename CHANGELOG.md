@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-04-21
+
+### Added
+- Pure-tone image outlines on avatar video, client icons, and testimonial avatars
+- Tactile press-scale (0.96) on Contact button, CTA, and project cards
+- Tabular numerals on SSH and GPG key fingerprints for mono alignment
+- `text-wrap: balance` on headings and `text-wrap: pretty` on paragraphs
+
+### Changed
+- Replace `transition-all` with specific property transitions across cards, popovers, and client icons
+
+### Removed
+- Corner-drawing hover animation on Contact button
+
 ## 2026-04-03
 
 ### Fixed

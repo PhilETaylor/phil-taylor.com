@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var btn = document.querySelector('.contact-draw');
+  var btn = document.querySelector('.contact-btn');
   if (!btn) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
