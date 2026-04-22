@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-04-22
+
+### Added
+- Markdown representation of the homepage at `/index.md` with Accept-header content negotiation in the Worker
+- `Vary: Accept` and `Link: rel="alternate"` discovery headers on the homepage
+- `run_worker_first` for `/` and `/index.html` in wrangler.toml so the Worker can negotiate before static asset serving
+
+### Removed
+- Jersey Aero Club webcams page (`webcam.html`) and `js/webcam.js`
+
 ## 2026-04-21
 
 ### Added
