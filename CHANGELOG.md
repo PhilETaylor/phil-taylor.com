@@ -3,9 +3,8 @@
 ## 2026-04-22
 
 ### Added
-- Markdown representation of the homepage at `/index.md` with Accept-header content negotiation in the Worker
-- `Vary: Accept` and `Link: rel="alternate"` discovery headers on the homepage
-- `run_worker_first` for `/` and `/index.html` in wrangler.toml so the Worker can negotiate before static asset serving
+- Markdown representation of the homepage at `/index.md` for agents and LLMs
+- `Content-Signal: ai-train=no, search=yes, ai-input=no` in robots.txt to declare AI content usage preferences
 
 ### Removed
 - Jersey Aero Club webcams page (`webcam.html`) and `js/webcam.js`
