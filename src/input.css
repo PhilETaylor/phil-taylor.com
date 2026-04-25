@@ -47,6 +47,55 @@ p {
   text-wrap: pretty;
 }
 
+/* Scrollbars: brand-tinted, thin, stable gutter to prevent layout shift */
+html {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--color-primer-neutral-emphasis) 55%, transparent) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-primer-neutral-emphasis) 50%, transparent);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background-color 0.2s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--color-primer-accent-fg) 70%, transparent);
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    scrollbar-color: color-mix(in srgb, var(--color-primer-neutral-emphasis) 35%, transparent) transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-primer-neutral-emphasis) 35%, transparent);
+    background-clip: padding-box;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in srgb, var(--color-primer-accent-fg) 60%, transparent);
+    background-clip: padding-box;
+  }
+}
+
 /* Pure-tone image outlines (never tint with slate/zinc) */
 @utility image-outline {
   outline: 1px solid rgba(0, 0, 0, 0.1);

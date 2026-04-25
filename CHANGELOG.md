@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-04-25
+
+### Added
+- Brand-tinted thin scrollbars with stable gutter to prevent layout shift, accent-coloured thumb on hover, and dark-mode variant via `prefers-color-scheme`
+
 ## 2026-04-22
 
 ### Added
