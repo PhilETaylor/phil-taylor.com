@@ -4,7 +4,7 @@
 
 Senior software developer specialising in PHP, full-stack SaaS, and complete platform lifecycle architecture - including DevOps. Most often found in the terminal.
 
-Expert in Linux server security and personal data protection, with a track record of discovering and responsibly disclosing vulnerabilities in critical systems.
+Expert in Linux server security and personal data protection, with a track record of [discovering and responsibly disclosing vulnerabilities](https://mysites.guru/blog/tag/responsible-disclosure/) in critical systems.
 
 Entrepreneur and founder of multiple digital businesses. Much of my work runs under white-label arrangements or NDA - building the platforms that quietly power other companies' products.
 

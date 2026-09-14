@@ -21,3 +21,6 @@ Thumbs.db
 # Build
 dist/
 .cache/
+
+# Claude Code scratch
+.claude-tmp/

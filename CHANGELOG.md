@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-09-14
+
+### Added
+- Link from the About section security paragraph to the responsible disclosure blog archive, in `index.html`, `index.md` and `llms.txt`
+- About paragraphs on Personal Data Protection across Jersey, UK, EU and worldwide jurisdictions, and on daily Claude Code and Anthropic API use
+- `public/.assetsignore` so Cloudflare Workers skips `.DS_Store` and `Thumbs.db`
+
+### Changed
+- Broaden the security paragraph beyond Linux servers to web application, SaaS and website security
+- Open the About section with "Decades of experience" instead of "Senior software developer"
+- Bump asset cache-buster to v=19
+
+### Removed
+- "Need help with your Joomla or WordPress site?" call-to-action card
+- "What People Say" testimonials block
+
 ## 2026-04-25
 
 ### Added
