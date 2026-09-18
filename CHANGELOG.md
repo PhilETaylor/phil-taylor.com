@@ -7,6 +7,10 @@
 
 ### Changed
 - `security.txt` now mirrors the mySites.guru coordinated disclosure file (keys.openpgp.org encryption key, disclosure policy link, expires 2027-03-18), with Canonical listing both phil-taylor.com URLs; the old PGP-signed version is gone
+- About security paragraph now says the long track record of vulnerability disclosures comes from day-job software work rather than active research
+- White-label paragraph now describes building the SaaS platforms that quietly underpin other companies' success
+- Bring the security paragraph in `index.md` and `llms.txt` in line with `index.html` (web application, SaaS and website security)
+- Bump asset cache-buster to v=20
 
 ## 2026-09-14
 

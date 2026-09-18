@@ -11,9 +11,9 @@
 
 Senior software developer specialising in PHP, full-stack SaaS, and complete platform lifecycle architecture, including DevOps. Most often found in the terminal.
 
-Expert in Linux server security and personal data protection, with a track record of [discovering and responsibly disclosing vulnerabilities](https://mysites.guru/blog/tag/responsible-disclosure/) in critical systems.
+Expert in Linux server security, web application, SaaS, and website security, with a long track record of [discovering and responsibly disclosing vulnerabilities](https://mysites.guru/blog/tag/responsible-disclosure/) in critical systems, as a byproduct of my day job writing software, not as an active researcher.
 
-Entrepreneur and founder of multiple digital businesses. Much of my work runs under white-label arrangements or NDA, building the platforms that quietly power other companies' products.
+Entrepreneur and founder of multiple digital businesses. Much of my work runs under white-label arrangements or NDA, building the SaaS platforms that quietly underpin other companies' success.
 
 When I'm not coding, you'll find me flying or out on the water. I hold a Commercial Pilot Licence, a Qualified Flying Instructor rating, and own my own aircraft. On the water: MCA/RYA Advanced Powerboat commercially endorsed, and several other maritime certifications, plus my own boat.
 
