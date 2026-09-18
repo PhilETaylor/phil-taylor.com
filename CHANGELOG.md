@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-18
+
+### Added
+- `/security.txt` at the site root, identical to `/.well-known/security.txt`
+
+### Changed
+- `security.txt` now mirrors the mySites.guru coordinated disclosure file (keys.openpgp.org encryption key, disclosure policy link, expires 2027-03-18), with Canonical listing both phil-taylor.com URLs; the old PGP-signed version is gone
+
 ## 2026-09-14
 
 ### Added
