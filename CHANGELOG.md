@@ -13,6 +13,7 @@
 - Sidebar: avatar video, name, tagline, contact button, location, email, company and social links
 - Projects grid, client projects and areas of expertise sections
 - Unused avatar, client logo images, confetti script and their CSS/JS effects
+- Structured data `knowsAbout`, `sameAs` social profiles and all owned projects except mySites.guru and fix.mySites.guru
 
 ## 2026-09-18
 
