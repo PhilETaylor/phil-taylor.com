@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-09-24
+
+### Changed
+- Homepage is now a single centred column headed "About Phil Taylor"
+- About section rewritten: award-winning developer, awards shortlisting for government vulnerability reports, Personal Data Protection law, Fractional CTO, white-label/NDA work and incident consultancy, vendor-neutral AI paragraph
+- SSH and GPG keys moved to a "Digital ID Key Fingerprints" section showing full fingerprints
+- Meta, Open Graph and Twitter descriptions no longer list projects or location
+- Bump asset cache-buster to v=21
+
+### Removed
+- Sidebar: avatar video, name, tagline, contact button, location, email, company and social links
+- Projects grid, client projects and areas of expertise sections
+- Unused avatar, client logo images, confetti script and their CSS/JS effects
+
 ## 2026-09-18
 
 ### Added
