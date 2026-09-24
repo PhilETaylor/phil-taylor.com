@@ -7,7 +7,7 @@
 - About section rewritten: award-winning developer, awards shortlisting for government vulnerability reports, Personal Data Protection law, Fractional CTO, white-label/NDA work and incident consultancy, vendor-neutral AI paragraph
 - SSH and GPG keys moved to a "Digital ID Key Fingerprints" section showing full fingerprints
 - Meta, Open Graph and Twitter descriptions no longer list projects or location
-- Bump asset cache-buster to v=21
+- Bump asset cache-buster to v=22
 
 ### Removed
 - Sidebar: avatar video, name, tagline, contact button, location, email, company and social links
