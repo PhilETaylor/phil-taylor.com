@@ -15,7 +15,7 @@ Expert in Linux server security, web application, SaaS, and website security, wi
 
 Entrepreneur and founder of multiple digital businesses. Much of my work runs under white-label arrangements or NDA, building the SaaS platforms that quietly underpin other companies' success.
 
-When I'm not coding, you'll find me flying or out on the water. I hold a Commercial Pilot Licence, a Qualified Flying Instructor rating, and own my own aircraft. On the water: MCA/RYA Advanced Powerboat commercially endorsed, and several other maritime certifications, plus my own boat.
+When I'm not coding, you'll find me flying or out on the water. I hold a Commercial Pilot Licence, a Qualified Flight Instructor certification, and own my own aircraft. On the water: MCA/RYA Advanced Powerboat commercially endorsed, and several other maritime certifications, plus my own boat.
 
 ## Main Active Areas of Expertise
 

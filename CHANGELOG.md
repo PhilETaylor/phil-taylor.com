@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-26
+
+### Changed
+- Aviation credential now reads "Qualified Flight Instructor certification" on the homepage, index.md and llms.txt
+
 ## 2026-09-24
 
 ### Changed
