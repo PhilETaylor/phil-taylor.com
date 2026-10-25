@@ -159,6 +159,17 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Links inside running text need a non-colour cue (WCAG 1.4.1) */
+p a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 2px;
+}
+
+p a:hover {
+  text-decoration-color: currentColor;
+}
+
 /* No underline on card links */
 a.no-underline,
 a.no-underline:hover {
@@ -210,7 +221,7 @@ a.no-underline:hover {
   background: conic-gradient(
     from var(--border-angle),
     transparent 20%,
-    var(--color-primer-accent-fg) 50%,
+    var(--color-primer-fg) 50%,
     transparent 80%
   );
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
